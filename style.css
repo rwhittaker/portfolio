@@ -1,74 +1,90 @@
 body {
+  background-color: #dddddd;
+  font-family: Consolas;
   margin: 0;
+  text-align: center;
 }
+
+a:link { color:#30475e;}
+a:visited { color:#30475e;}
+a:hover { color:#F05454;}
+#highlight { color:#F05454; }
+
 header {
-  background-color;
   text-align: center;
-  height:300px;
-}
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ff;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #fffff;}
-
-ul.topnav li a.active {background-color: #ff;}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+  height: 100vh;
 }
 
 h1 {
-  font-family:Arial
+  font-family: Consolas;
+  font-size: 55px;
+  font-color: #30475e;
+  opacity: 70%;
 }
 
 #navbar {
+  margin-bottom:20vh; 
+}
+
+#welcome-section2 {margin-top:50px;}
+
+.item0 {grid-area: navbar; text-align:center;}
+.item1 { grid-area: header; margin-bottom:300px;}
+.item3 { grid-area: main; margin-bottom:500px;}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'navbar navbar navbar navbar navbar navbar'
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #dddddd;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #dddddd;
   text-align: center;
-  align: fixed;
- 
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 .flex-container {
-  border-radius: 25px;
-  height: 100%;
   display: flex;
+  border-radius: 25px;
   flex-wrap: wrap;
-  border: solid black;
   flex-direction: row;
   justify-content: center;
 }
 
 .flex-container > div {
-  background-color: #ffffff;
-  border-radius: 25px;
-  border: solid black;
-  width: 400px;
-  height: 300px; 
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
+  background-color: #dddddd;
+  border-radius: 10px;
+  border: solid #30475e;
+  width: 350px;
+  height: 200px; 
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
   text-align: center;
   flex-wrap: wrap;
-  
+  object-fit: fill;
 }
+
+
 footer {
   text-align:center;
 }
 
+@media screen and (max-width: 200px) {
+  body {
+    font-family: Courier;
+  }
+  h1 {
+    font-family: Courier;
+  }
+}
