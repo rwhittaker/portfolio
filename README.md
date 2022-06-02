@@ -1,2 +1,2 @@
 # portfolio
-rwhittaker, github site test.
+My dev projects portfolio. Simple, static bootstrap 5 site.
