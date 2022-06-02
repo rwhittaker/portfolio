@@ -1,29 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="https://rwhittaker.github.io/style.css">
-  </head>
-<title>Ryan Whittaker - Portfolio</title>
-<div class="grid-container">
-  <div class="item1">
-  <header id="welcome-section" class="item1">
-    <h1><span id="highlight">[ </span>Ryan Whittaker<span id="highlight"> - </span>Dev Portfolio<span id="highlight"> ]</span></h1>
-  
-  <div class="item0">
-  <nav id="navbar"><span id="highlight"> [</span>
-    <a href="https://github.com/rwhittaker" target="_blank" id="profile-link">GitHub</a><span id="highlight"> |</span>
-    <a href="https://www.linkedin.com/in/ryan-p-whittaker" target="_blank">LinkedIn</a><span id="highlight"> |</span>
-    <a href="https://www.ryanwhittaker.com" target="_blank">Blog</a><span id="highlight"> ]</span>
-  </nav>
-  </div>
-    <span  id="bold"> Welcome. My name is Ryan. Below are some links to my projects.</span> <p><p>
-    </header>
+  <title>Ryan Whittaker - Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
 
-    <div class="item3">
+<div class="p-5 bg-secondary text-center text-dark">
+  <h1>Ryan Whittaker - Dev Portfolio</h1>
+  <p>Welcome. My name is Ryan. Below are some links to my projects.</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark text-center">
+  <div class="container-fluid justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/rwhittaker" target="_blank" id="profile-link">GitHub</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.ryanwhittaker.com" target="_blank" id="profile-link">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/ryan-p-whittaker" target="_blank" id="profile-link">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About</h2>
+      <p>I'm a developer and writer based in the UK, with experience working mainly with Javascript and Python. I am currently focusing on development within the ServiceNow platform.</p>
+      <p>
+        If you'd like to contact me, please feel free to get in touch via LinkedIn.
+      </p>
+      <p>
+        This site is intended as a place for me to list and link to some of the tech projects I'm working on. Everything else is on my blog.
+      </p>
+    </div>
+    
+    <div class="col-sm-8">
+      <h2>Blog Project</h2>
+      <h5><a href="https://www.ryanwhittaker.com" class="link-dark">ryanwhittaker.com</a></h5>
       
-  <a href="https://www.ryanwhittaker.com">ryanwhittaker.com</a><span id="highlight"> - </span>My blog.<br><p>
-      <a href="https://github.com/rwhittaker/devtraining-needit-sandiego">ServiceNow - NeedIt App</a><span id="highlight"> - </span>Servicenow dev training. This is my fork of the needit app. <br><p>
-      <a href="https://github.com/rwhittaker/pset7-finance">Stock Checker App</a><span id="highlight"> - </span>Python project working with a stock checking API. Part of the CS50 course.<br><p>
+      <!--<div class="fakeimg">Fake Image</div>-->
+      <p>Work in progress personal reading notes blog, and tech knowledge base. I'll be building this out as I collate notes on books I've been reading and write up some of my tech notes and tutorials.  I'll be setting affiliate links up to any of the books to generate some passive income and promote books I enjoy.</p>
+      
+   
+      <h2>ServiceNow - NeedIt App</h2>
+      <h5> <a href="https://github.com/rwhittaker/devtraining-needit-sandiego" class="link-dark">Github Repo</a></h5>
+      <!--<div class="fakeimg">Fake Image</div>-->
+      <p>Servicenow dev training. This is my fork of the needit app.</p>
+      
+      <h2>Stock Checker App</h2>
+      <h5> <a href="https://github.com/rwhittaker/pset7-finance" class="link-dark">Github Repo</a></h5>
+      <!--<div class="fakeimg">Fake Image</div>-->
+      <p>Python project working with a stock checking API. Part of the CS50 course.</p>
+      
+    </div>
   </div>
 </div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p>© 2022 Ryan Whittaker</p>
+</div>
+
+</body>
 </html>
+
