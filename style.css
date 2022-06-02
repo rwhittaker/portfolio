@@ -29,8 +29,8 @@ h1 {
 #welcome-section2 {margin-top:50px;}
 
 .item0 {grid-area: navbar; text-align:center;}
-.item1 { grid-area: header; margin-bottom:300px;}
-.item3 { grid-area: main; margin-bottom:500px;}
+.item1 { grid-area: header;}
+.item3 { grid-area: main;}
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
