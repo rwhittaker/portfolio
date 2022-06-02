@@ -9,11 +9,10 @@ a:link { color:#30475e;}
 a:visited { color:#30475e;}
 a:hover { color:#F05454;}
 #highlight { color:#F05454; }
-#bold { color:#434343; font-weight: bold; font-size: 16pt}
+#bold { color:#434343; font-weight: bold; font-size: 55px}
 
 header {
   text-align: center;
-  height: 100vh;
 }
 
 h1 {
@@ -23,28 +22,25 @@ h1 {
   opacity: 70%;
 }
 
-
-.item0 {grid-area: navbar; text-align:center;}
 .item1 { grid-area: header;}
+.item0 {grid-area: navbar; text-align:center;}
 .item3 { grid-area: main;}
-.item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'main main main main main main'
-    'footer footer footer footer footer footer';
-  grid-gap: 10px;
+    'header'
+    'navbar'
+    'main'
   background-color: #dddddd;
-  padding: 10px;
+
 }
 
 .grid-container > div {
   background-color: #dddddd;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 30px;
 }
 
